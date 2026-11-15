@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Young Foreigner — football, gaming, music, lifestyle and entertainment.">
+<title>YOUNG FOREIGNER | The Empire</title>
+<style>
+:root{--bg:#080808;--panel:#121212;--gold:#d8ad52;--gold2:#f2d58b;--muted:#aaa;--white:#f7f5ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#080808eF;border-bottom:1px solid #29231a;backdrop-filter:blur(12px)}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:900;letter-spacing:2px;color:var(--gold);font-size:1.15rem}
+.links{display:flex;gap:22px;align-items:center;font-size:.88rem;color:#ddd}.links a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid #51452d;color:var(--gold);padding:8px 12px;border-radius:8px}
+.hero{min-height:680px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,#382b15 0%,#15110b 28%,#080808 68%)}
+.hero:before,.hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #d8ad5225;transform:rotate(45deg)}.hero:before{left:-210px;top:100px}.hero:after{right:-210px;bottom:60px}
+.hero-inner{position:relative;z-index:1;padding:80px 0}.eyebrow{color:var(--gold);letter-spacing:5px;text-transform:uppercase;font-size:.78rem;font-weight:bold}
+h1{font-size:clamp(3rem,10vw,7.5rem);line-height:.95;letter-spacing:-5px;margin:20px 0;text-transform:uppercase}h1 span{color:var(--gold)}
+.hero p{color:#c5c0b5;max-width:600px;margin:25px auto;font-size:1.08rem}
+.btn{display:inline-block;padding:13px 23px;border-radius:4px;background:var(--gold);color:#100d07;font-weight:800;letter-spacing:1px;margin:8px 5px;border:1px solid var(--gold);transition:.2s}
+.btn:hover{background:transparent;color:var(--gold)}.btn.outline{background:transparent;color:var(--gold)}
+section{padding:85px 0}.section-tag{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:.75rem;font-weight:bold}
+h2{font-size:clamp(2rem,5vw,3.3rem);margin:8px 0 16px;line-height:1.1}.intro{color:var(--muted);max-width:650px}
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.quote{border:1px solid #4a3b20;background:linear-gradient(145deg,#19150e,#0e0e0e);padding:35px;border-radius:12px;color:var(--gold2);font-size:1.4rem;font-weight:bold}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.card{background:var(--panel);border:1px solid #292929;border-radius:12px;padding:26px;min-height:210px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#8d6b2d}.card .emoji{font-size:2rem}.card h3{margin:15px 0 5px}.card p{color:var(--muted);font-size:.94rem;margin:0}
+.dark{background:#0e0e0e;border-top:1px solid #1e1e1e;border-bottom:1px solid #1e1e1e}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.tile{min-height:180px;border-radius:10px;border:1px dashed #67512b;background:linear-gradient(135deg,#211a0e,#101010);display:grid;place-items:center;text-align:center;padding:20px;color:#c8b88f}
+.tile strong{display:block;color:var(--gold);font-size:1.05rem}.tile small{color:#999}
+.contact{text-align:center;background:radial-gradient(ellipse at center,#241b0d,#080808 65%)}
+footer{border-top:1px solid #28231a;padding:25px 0;color:#888;font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.socials{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:24px 0}
+.socials a{border:1px solid #51452d;border-radius:30px;padding:9px 16px;color:var(--gold2)}.socials a:hover{background:#211a0e}
+@media(max-width:760px){.menu{display:block}.links{display:none;position:absolute;top:72px;left:0;right:0;background:#0c0c0c;padding:20px 5%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #29231a}.links.open{display:flex}.about-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}h1{letter-spacing:-2px}}
+@media(max-width:480px){.cards,.gallery{grid-template-columns:1fr}.hero{min-height:590px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#home">YF. EMPIRE</a>
+<button class="menu" id="menuBtn" aria-label="Open navigation">MENU ☰</button>
+<div class="links" id="navLinks">
+<a href="#about">ABOUT</a><a href="#world">MY WORLD</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a>
+</div></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner">
+<div class="eyebrow">Welcome to my world</div>
+<h1>Young<br><span>Foreigner</span></h1>
+<p>One name. Many passions. A whole empire in the making. Explore my world of football, gaming, music and lifestyle.</p>
+<a class="btn" href="#world">EXPLORE THE EMPIRE</a><a class="btn outline" href="#about">MY STORY</a>
+</div></section>
+<section id="about"><div class="wrap about-grid">
+<div><div class="section-tag">The person behind the brand</div><h2>More than a name.<br>A mindset.</h2>
+<p class="intro">Welcome to the official Young Foreigner space. This is where passion, creativity and ambition come together. I'm building my own lane and sharing the things that inspire me.</p>
+<p class="intro">This is my story — and the next chapter is still being written.</p></div>
+<div class="quote">“Stay different. Stay focused. Build your own legacy.”<div style="font-size:.75rem;letter-spacing:3px;margin-top:18px;color:#9f895d">— YOUNG FOREIGNER</div></div>
+</div></section>
+<section class="dark" id="world"><div class="wrap">
+<div class="section-tag">Explore the empire</div><h2>My world</h2><p class="intro">Different passions. One identity. Choose a lane and explore.</p>
+<div class="cards">
+<article class="card"><div class="emoji">⚽</div><h3>Football</h3><p>Football culture, favourite teams, jerseys, skills and the beautiful game.</p></article>
+<article class="card"><div class="emoji">🎮</div><h3>Gaming</h3><p>Games I play, gaming moments, highlights and achievements.</p></article>
+<article class="card"><div class="emoji">🎵</div><h3>Music</h3><p>Sounds, artists, playlists and music projects that move me.</p></article>
+<article class="card"><div class="emoji">📸</div><h3>Lifestyle</h3><p>Style, everyday moments, inspiration and the journey behind the brand.</p></article>
+<article class="card"><div class="emoji">🎬</div><h3>Entertainment</h3><p>Creative content, videos, trends and things worth sharing.</p></article>
+<article class="card"><div class="emoji">👑</div><h3>The Legacy</h3><p>Goals, ambition and the vision for the Young Foreigner brand.</p></article>
+</div></div></section>
+<section id="gallery"><div class="wrap"><div class="section-tag">The visual story</div><h2>Gallery</h2><p class="intro">Your photos, football moments, gaming screenshots and videos can go here.</p>
+<div class="gallery">
+<div class="tile"><div><strong>YOUR PHOTO</strong><small>Replace with a profile picture</small></div></div>
+<div class="tile"><div><strong>FOOTBALL</strong><small>Add your favourite football image</small></div></div>
+<div class="tile"><div><strong>GAMING</strong><small>Add a gaming screenshot</small></div></div>
+<div class="tile"><div><strong>MUSIC</strong><small>Add an artist or music image</small></div></div>
+<div class="tile"><div><strong>LIFESTYLE</strong><small>Add a personal moment</small></div></div>
+<div class="tile"><div><strong>THE JOURNEY</strong><small>Add your latest highlight</small></div></div>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-tag">Let's connect</div><h2>Be part of the journey.</h2><p class="intro" style="margin:0 auto">Follow the journey and connect with Young Foreigner.</p>
+<div class="socials"><a href="#" aria-label="Instagram">Instagram — add link</a><a href="#" aria-label="TikTok">TikTok — add link</a><a href="#" aria-label="YouTube">YouTube — add link</a></div>
+<a class="btn" href="mailto:hello@youngforeigner.example">BUSINESS ENQUIRIES</a>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> YOUNG FOREIGNER. ALL RIGHTS RESERVED.</span><span>Different path. Same ambition. 👑</span></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+</script>
+</body></html>
